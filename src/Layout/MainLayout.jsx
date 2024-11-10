@@ -1,17 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Navber from "../Components/Navber/Navber";
 
 function MainLayout() {
-  return (
-    <>
-      <nav className="">
-        <ul className=" flex justify-center items-center gap-7 py-5">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/login">Login</NavLink>
-        </ul>
-      </nav>
 
+  return (
+    <div className="cotainer px-5">
+      <Navber />
       <Outlet />
-    </>
+    </div>
   );
 }
 
